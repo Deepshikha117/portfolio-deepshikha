@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MY WEBPAGE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
   <header>
     <h1>PORTFOLIO</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-  </nav>
-
   <main>
-    
     <section id="about">
-      <h2>ABOUT ME</h2>
-      <p>Hi! I’m Deepshikha. Welcome to my webpage.I am passionate about designing, creating websites, and continuously learning new technologies. I am also deeply fascinated by AI and prompt engineering, and I enjoy exploring how intelligent systems can enhance creativity and problem-solving. Along with tech, I have a strong interest in filmmaking, and I have worked on several projects focused on scriptwriting, storytelling, and creative direction</p>
-      <img src="C:\Users\deepsi\Pictures\Saved Pictures\deepsi\DSC05292.JPG" alt="My Photo" width="500" height="800">
+      <h2>About Me</h2>
+      <section class="about-section">
+        <article class="about-text">
+          <p>Hi, I’m Deepshikha Gautam.
+          I’m passionate about learning new technologies and exploring creative innovations.</p>
+          <p>I love designing and developing websites, building interactive environments in Unity, and expressing ideas through filmmaking and scriptwriting. Over time, I’ve worked on multiple projects across these fields, which has helped me grow my skills and understand how creativity and technology can come together to make meaningful work.</p>
+        </article>
+        <figure class="about-image">
+          <img src="images/AC108468.jpg">
+        </figure>
+      </section>
     </section>
 
     <section id="projects">
-      <h2>PROJECTS</h2>
-      <ul>
-        <li>Portfolio Website</li>
-        <li>Java Projects</li>
-        <li>UI/UX Design Samples</li>
-        <li>Unity Game Development</li>
-      </ul>
+      <h2>Projects</h2>
+      <section class="project-gallery">
+        <article class="project-card">
+          <img src="images/horror.png">
+          <h3>UNITY GAME/3D</h3>
+          <p>Immersive 3D environemnts.</p>
+        </article>
+        <article class="project-card">
+          <img src="images/todo.png">
+          <h3>WEB DEVELOPMENT</h3>
+          <p>Responsive websites and applications.</p>
+        </article>
+        <article class="project-card">
+          <img src="images\java.png">
+          <h3>JAVA PROJECTS</h3>
+          <p>Object-oriented programming solutions.</p>
+        </article>
+        <article class="project-card">
+          <img src="images\DeepshikhaGuatam_sololearn.jpg">
+          <h3>UI/UX DESIGN</h3>
+          <p>User-centric inetrface design</p>
+        </article>
+      </section>
     </section>
 
     <section id="contact">
-      <h2>CONTACT</h2>
-      <form>
-        <label>Name:</label>
-        <input type="text" placeholder="Enter name">
+      <h2>Contact</h2>
+      <form action="#" method="POST">
+        <p>Let's work together! Send me a message.</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-        <label>Email:</label>
-        <input type="email" placeholder="Enter email">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-        <label>Message:</label>
-        <textarea placeholder="Message..."></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Send</button>
       </form>
     </section>
-
   </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
