@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> MY WEBPAGE </title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="Title">
-      <h1>WEBPAGE</h1>
-      <p>HI, THIS IS DEEPSHIKHA. WELCOME TO THE WEBPAGE</p>
-      <img src="C:\Users\deepsi\Downloads\AI ideas meta\8e17de72e1fb5103a04b2316aea51be0.jpg" width="730" height="600">
-    </div>
-    <div class="list">
-      <h1>MOVIES</h1>
-      <ul><li>SPIDERMAN</li></ul>
-      <ul><li>INTERSTELLAR</li></ul>
-      <ul><li>SEVEN</li></ul>
-    </div>
-    <div class="table">
-      <table>
-        <tr><th>Name</th><th>Class</th> <th>Grade</th></tr>
-        <tr><td>Eujina</td><td>12</td><td>A</td></tr>
-      </table>
-    </div>
-    <div class="Form">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY WEBPAGE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>PORTFOLIO</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+    <section id="about">
+      <h2>ABOUT ME</h2>
+      <p>Hi! I’m Deepshikha. Welcome to my webpage.I am passionate about designing, creating websites, and continuously learning new technologies. I am also deeply fascinated by AI and prompt engineering, and I enjoy exploring how intelligent systems can enhance creativity and problem-solving. Along with tech, I have a strong interest in filmmaking, and I have worked on several projects focused on scriptwriting, storytelling, and creative direction</p>
+      <img src="C:\Users\deepsi\Pictures\Saved Pictures\deepsi\DSC05292.JPG" alt="My Photo" width="500" height="800">
+    </section>
+
+    <section id="projects">
+      <h2>PROJECTS</h2>
+      <ul>
+        <li>Portfolio Website</li>
+        <li>Java Projects</li>
+        <li>UI/UX Design Samples</li>
+        <li>Unity Game Development</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>CONTACT</h2>
       <form>
-        <label> Name: </label>
+        <label>Name:</label>
         <input type="text" placeholder="Enter name">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Message:</label>
+        <textarea placeholder="Message..."></textarea>
+
         <button type="submit">Submit</button>
       </form>
-      <form>
-        <label> Email: </label>
-        <input type="text" placeholder="Enter email">
-        <button type="submit">Submit</button>
-      </form>
-      <form>
-        <label> Password: </label>
-        <input type="text" placeholder="Enter password">
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </body>
+    </section>
+
+  </main>
+
+</body>
+</html>

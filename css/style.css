@@ -1,52 +1,139 @@
+
 body {
-  background-color: grey;
-  font-family: Arial, sans-serif;
+  background-color: lavenderblush;
+  font-family: Lora, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-h1 {
+h1,h2 {
   text-align: center;
-  color: darkgoldenrod;
+  color: yellowgreen;
+  font-family: Lora, sans-serif;
+  padding-bottom: 30px;
+  font-size: 30px;
 }
-.Title, .list, .table, .Form {
-  margin: 20px;   
-  padding: 20px;  
-}
-.Title, .list, .table{
-  border: 1px solid ;              
-  background-color: white;             
-  box-shadow: 2px 2px 10px grey;       
-  border-radius: 20px;                 
-}
-.Form{
-  border: 1px solid ;              
-  background-color: white;             
-  box-shadow: 2px 2px 10px grey;       
-  border-radius: 10px;
+p{
+  text-align: center;
+  color: black;
+  line-height: 2;
 
 }
 
-table {
-  width: 100%;
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
 }
 
-th, td {
-  border: 1px solid black;
+
+nav {
+  background-color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: darkmagenta;
+  font-size: 16px;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px grey;
+  padding-bottom: 10px;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px grey;
+}
+
+section img {
+  display: flex;
+  margin: 50px auto;
+  border-radius: 80px;
+}
+section ul li {
+  line-height: 3;
+  color: darkmagenta;
+  font-size: 22px;
+  display: flex;
+  background-color: white;
+  margin: 50px;
+  padding: 100px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px grey;
+  padding-bottom: 20px;
+  height: 55px;
+  width: 50px;
+}
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  list-style: none;
+  padding: 90px;
+
+}
+#projects ul li {
+  background: white;
+  padding: 150px;
+  border-radius: 50px;
+  box-shadow: 2px 5px 10px grey;
+  font-size: 20px;
+  text-align: left;
+  color: darkmagenta;
+}
+
+
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+#contact input,
+#contact textarea {
   padding: 10px;
-  text-align: center;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #555;
 }
 
-
-input {
-  padding: 8px;
-  margin-bottom: 10px;
-}
-
-button {
-  padding: 8px;
-  background-color: green;
+#contact button {
+  padding: 10px;
+  background-color: deepskyblue;
   color: white;
   border: none;
+  cursor: pointer;
+  border-radius: 8px;
 }
-img{
-  align-items: center;
+
+#contact button:hover {
+  background-color: black;
 }
+
